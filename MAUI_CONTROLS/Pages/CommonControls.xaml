@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI_CONTROLS.Pages.CommonControls"
+             Title="Common Controls">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image Source="./Resources/dotnet_bot.png"
+                   SemanticProperties.Description="Cute dotnet bot"
+                   HeightRequest="200"
+                   HorizontalOptions="Center" />
+
+            <Label
+                Text="Hello, World!"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Welcome to .NET Multi-platform Application UI"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to .NET MAUI"
+                FontSize="18"
+                HorizontalOptions="Center" />
+            <Label
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Span Text concept with In-Built methods"
+                FontSize="14"
+                HorizontalOptions="Center">
+
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="C# " TextColor="Purple" FontSize="36" />
+                        <Span Text=" and " FontAttributes="Bold" FontSize="20" CharacterSpacing="2" />
+                        <Span Text="XAML" TextColor="GreenYellow"  FontSize="36" TextTransform="Uppercase" />
+                    </FormattedString>
+                </Label.FormattedText>
+                
+            </Label>
+                                   
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
